@@ -22,15 +22,16 @@ To get a local copy up and running follow these simple example steps.
 - linters 
 
 ### Setup
-
+1. Install Vistual Studio Code from https://code.visualstudio.com/
+2. Install Live Server VS plugin from https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
+3. Open a project and click to Go Live from the status bar to turn the server on/off.
 
 ### Usage
-
-
+Showcase your portfolio.
 
 ## Authors
 
-👤 **Author1**
+👤 **Megha Bodke**
 
 - GitHub: [@megha-n-bodke](https://github.com/megha-n-bodke)
 - LinkedIn: [Megha Bodke](https://www.linkedin.com/in/megha-bodke/)
