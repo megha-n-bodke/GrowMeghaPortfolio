@@ -8,7 +8,6 @@ body {
   font-family: sans-serif;
 }
 
-
 .headercontainer {
   display: flex;
   width: 100%;
@@ -31,14 +30,13 @@ body {
   margin-left: 96px;
 }
 
-.try{
+.try {
   background-color: #7f8cff;
-
 }
+
 .main-section {
   width: 100%;
   height: 100%;
-  width:100%;
   display: flex;
   flex-direction: column;
 }
@@ -50,7 +48,7 @@ body {
   background-repeat: no-repeat;
   margin-left: 55%;
   margin-top: 40px;
-  height:100%;
+  height: 100%;
 }
 
 .half-ellipse {
@@ -127,9 +125,10 @@ body {
   height: 40px;
 }
 
-.iconspace{
+.iconspace {
   margin-right: 12px;
 }
+
 .fa-brands {
   height: 40px;
   margin-left: 10px;
