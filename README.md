@@ -1,38 +1,30 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
--GrowMeghaPortfolio
-
-> Description the project.
--Made portfolio website home page using flexbox.
+# GrowMeghaPortfolio
+- Made portfolio website home page using flexbox.
 
 
 ## Built With
 
 - Major languages
-    -Html
-    -CSS
-
+    - Html
+    - CSS
+    - flexbox
+    - Node
 
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
+- Vistual Studio Code
+- Browser (Firefox / Google Chrome)
+- Node.js (v6.11.2+)
+- linters 
 
 ### Setup
 
-### Install
 
 ### Usage
-
-### Run tests
-
-### Deployment
 
 
 
@@ -40,9 +32,8 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/megha-n-bodke)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/megha-bodke/)
-
+- GitHub: [@megha-n-bodke](https://github.com/megha-n-bodke)
+- LinkedIn: [Megha Bodke](https://www.linkedin.com/in/megha-bodke/)
 
 ## 🤝 Contributing
 
@@ -56,9 +47,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Thanks to Microverse for giving this opportunity to learn ...
 
 ## 📝 License
 
