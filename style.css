@@ -6,6 +6,7 @@
 
 body {
   font-family: sans-serif;
+  width:375px;
 }
 
 .headercontainer {
@@ -41,57 +42,20 @@ body {
   flex-direction: column;
 }
 
-.FirstShape {
-  background-image: url(/images/Ellipse8.png);
-  background-color: #7f8cff;
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin-left: 55%;
-  margin-top: 40px;
-  height: 100%;
+.content{
+  background-image: url(images/header-shapes-mobile.jpg);
+  background-size: cover;
+  height:500px;
+  width:100%;
+  margin-top: 35px;
 }
-
-.half-ellipse {
-  width: 77.5px;
-  height: 47px;
-}
-
-.first {
-  margin-left: -35px;
-}
-
-.tiltsmallrect {
-  margin-left: 35%;
-  margin-top: -26px;
-}
-
-.Ellipse5 {
-  margin-left: 112px;
-}
-
-.rectangle4 {
-  width: 82.58px;
-  height: 52.02px;
-
-  /* margin-right: -10px; */
-  margin-left: 248px;
-  margin-top: -61px;
-}
-
-.ellipse3 {
-  width: 99px;
-  height: 96px;
-  margin-left: 265px;
-  margin-top: -27px;
-}
-
 .boldtext {
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   word-wrap: normal;
-  margin-top: -39px;
+  padding-top: 110px;
   margin-left: 20px;
 }
 
@@ -102,6 +66,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 25px;
+  text-align: justify;
 }
 
 .socialmediatag {
@@ -110,7 +75,7 @@ body {
   line-height: 24px;
   color: #7f8cff;
   margin-left: 20px;
-  margin-top: -20px;
+  margin-top: 13px;
 }
 
 .socialmediaicons {
@@ -118,7 +83,7 @@ body {
   list-style: none;
   align-items: center;
   margin-left: 10px;
-  margin-top: 17px;
+  margin-top: 15px;
 }
 
 .socialmediaicons li {
@@ -139,27 +104,3 @@ body {
   color: #505f79;
 }
 
-.Ellipse12 {
-  margin-left: 270px;
-  margin-bottom: -22px;
-}
-
-.Ellipse13 {
-  margin-left: 262px;
-  margin-bottom: -28px;
-}
-
-.Ellipse15 {
-  margin-top: 46px;
-  margin-left: 64px;
-}
-
-.Ellipse4 {
-  margin-left: 237px;
-  margin-bottom: -3px;
-}
-
-.rectangle5 {
-  margin-left: 188px;
-  margin-top: -29px;
-}
