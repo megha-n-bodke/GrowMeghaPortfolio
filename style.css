@@ -27,6 +27,7 @@ body {
   margin-left: -27px;
   color: #6070ff;
   text-decoration: none;
+
 }
 
 .hambrgricon {
@@ -47,6 +48,7 @@ body {
 .content {
   background-image: url(images/header-shapes-mobile.jpg);
   background-size: contain;
+  background-repeat: no-repeat;
   height: 560px;
   width: 375px;
   margin-top: 20px;
