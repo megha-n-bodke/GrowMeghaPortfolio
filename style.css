@@ -44,10 +44,10 @@ body {
 
 .content{
   background-image: url(images/header-shapes-mobile.jpg);
-  background-size: cover;
-  height:500px;
-  width:100%;
-  margin-top: 35px;
+  background-size: contain;
+  height:560px;
+  width:375px;
+  margin-top: 20px;
 }
 .boldtext {
   font-style: normal;
