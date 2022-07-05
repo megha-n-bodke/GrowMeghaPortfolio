@@ -6,7 +6,7 @@
 
 body {
   font-family: sans-serif;
-  width:375px;
+  width: 375px;
 }
 
 .headercontainer {
@@ -42,13 +42,14 @@ body {
   flex-direction: column;
 }
 
-.content{
+.content {
   background-image: url(images/header-shapes-mobile.jpg);
   background-size: contain;
-  height:560px;
-  width:375px;
+  height: 560px;
+  width: 375px;
   margin-top: 20px;
 }
+
 .boldtext {
   font-style: normal;
   font-weight: 700;
@@ -103,4 +104,3 @@ body {
 .fab {
   color: #505f79;
 }
-
