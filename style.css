@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  width: 375px;
+}
+
+.headercontainer {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  color: #6070ff;
+}
+
+.logo {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 20px;
+  margin-left: -27px;
+  color: #6070ff;
+  text-decoration: none;
+}
+
+.hambrgricon {
+  margin-left: 96px;
+}
+
+.try {
+  background-color: #7f8cff;
+}
+
+.main-section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  background-image: url(images/header-shapes-mobile.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 590px;
+  width: 390px;
+  margin-top: 20px;
+}
+
+.boldtext {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  word-wrap: normal;
+  padding-top: 110px;
+  margin-left: 20px;
+}
+
+.intro {
+  font-style: normal;
+  margin-left: 20px;
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: justify;
+}
+
+.socialmediatag {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #7f8cff;
+  margin-left: 20px;
+  margin-top: 13px;
+}
+
+.socialmediaicons {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+
+.socialmediaicons li {
+  height: 40px;
+}
+
+.iconspace {
+  margin-right: 12px;
+}
+
+.fa-brands {
+  height: 40px;
+  margin-left: 10px;
+  color: #505f79;
+}
+
+.fab {
+  color: #505f79;
+}

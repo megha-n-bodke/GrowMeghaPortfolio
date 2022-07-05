@@ -1,56 +1,40 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
-
-> Description the project.
+# GrowMeghaPortfolio
+- Made portfolio website home page using flexbox.
 
 
 ## Built With
 
 - Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
-
+    - Html
+    - CSS
+    - flexbox
+    - Node
 
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
+- Vistual Studio Code
+- Browser (Firefox / Google Chrome)
+- Node.js (v6.11.2+)
+- linters 
 
 ### Setup
-
-### Install
+1. Install Vistual Studio Code from https://code.visualstudio.com/
+2. Install Live Server VS plugin from https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
+3. Open a project and click to Go Live from the status bar to turn the server on/off.
 
 ### Usage
-
-### Run tests
-
-### Deployment
-
-
+Showcase your portfolio.
 
 ## Authors
 
-👤 **Author1**
+👤 **Megha Bodke**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@megha-n-bodke](https://github.com/megha-n-bodke)
+- LinkedIn: [Megha Bodke](https://www.linkedin.com/in/megha-bodke/)
 
 ## 🤝 Contributing
 
@@ -64,9 +48,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Thanks to Microverse for giving this opportunity to learn ...
 
 ## 📝 License
 
