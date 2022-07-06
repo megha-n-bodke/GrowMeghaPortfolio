@@ -114,6 +114,7 @@ body {
   height: auto;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
+  margin-top: 114px;
 }
 
 .card-container {
@@ -133,4 +134,115 @@ body {
   height: 220px;
   border-radius: 8px;
   background-color: #7f8cff;
+  background-image: url(/images/works_section_images/Snapshoot\ Portfolio.png);
+}
+
+.content-container{
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+width: 295px;
+height: 288px;
+}
+.project-title{
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 44px;
+}
+
+h2{
+  font-weight: 600;
+font-size: 13px;
+line-height: 16px;
+/* identical to box height, or 123% */
+
+
+/* Neutrals/N600 */
+
+color: #344563;
+}
+.frame2{
+  display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 12px;
+
+width: 236px;
+height: 32px;
+
+}
+.description{
+  width: 295px;
+height: 76px;
+font-weight: 400;
+font-size: 15px;
+line-height: 24px;
+color: #344563;
+}
+
+.languages{
+  display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+width: 203px;
+height: 24px;
+list-style: none;
+}
+
+.languages li{
+  padding: 4px 12px;
+
+width: 53px;
+height: 24px;
+
+/* Primary/B50 */
+
+background: #EBEBFF;
+border-radius: 8px;
+
+}
+.word-style{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 16px;
+/* identical to box height, or 133% */
+
+letter-spacing: 0.03em;
+
+/* Primary/B400 */
+
+color: #6070FF;
+
+}
+li:last-child{
+  width: 89px;
+}
+
+.action{
+  width: 295px;
+  height: 72px;
+}
+.action-button{
+  padding: 12px;
+gap: 10px;
+width: 124px;
+height: 48px;
+left: 0px;
+top: calc(50% - 48px/2);
+background: #FFFFFF;
+border: 1px solid #6070FF;
+border-radius: 8px;
+font-weight: 500;
+font-size: 17px;
+line-height: 24px;
+color: #396DF2;
+
 }
