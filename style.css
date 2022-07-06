@@ -148,6 +148,7 @@ height: 596px;
   height: 220px;
   border-radius: 8px;
   background-color: #7f8cff;
+  padding-bottom: 209px;
 }
 .img1{
   background-image: url(/images/works_section_images/Snapshoot\ Portfolio\ \(1\).png);
@@ -269,5 +270,64 @@ font-weight: 500;
 font-size: 17px;
 line-height: 24px;
 color: #396DF2;
+}
 
+.action-button:hover{
+  background: #6070FF;
+  box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+  color: #FFFFFF;
+}
+
+.action-button:active{
+  background: #2230D2;
+  color: #FFFFFF;
+}
+
+.action-button:disabled{
+  border: 1px solid #C1C7D0;
+  color: #FFFFFF;
+}
+
+/* about my self section */
+.about-container{
+  display: flex;
+flex-direction: column;
+align-items: center;
+padding: 114px 24px;
+gap: 24px;
+position: absolute;
+width: 375px;
+height: 1125.15px;
+background-color: #6070FF;
+margin-top: 114px;
+background: #FFFFFF;
+border-top-right-radius: 80px;
+}
+
+.about-myself{
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+width: 327px;
+height: 409px;
+}
+
+.about-heading{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 52px;
+}
+
+.about-intro{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #344563;
 }
