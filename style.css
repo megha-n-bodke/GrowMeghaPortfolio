@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,8 +6,9 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: sans-serif, Poppins;
   width: 375px;
+  background-color: #E5E5E5;;
 }
 
 .headercontainer {
@@ -108,18 +110,20 @@ body {
   color: #505f79;
 }
 
+/* works section starts here */
+
 .works-section-container {
   background: #e5e5e5;
   width: 100%;
-  height: auto;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   margin-top: 114px;
+  display:grid;
+  grid-template-rows:552px 552px 552px 552px;
+  row-gap: 88px;
 }
 
 .card-container {
-  width: 327px;
-  height: 552px;
   background: #fff;
   margin: 0 24px;
   display: flex;
@@ -127,6 +131,16 @@ body {
   align-items: center;
   padding: 16px;
   gap: 12px;
+  border-radius: 16px;
+}
+
+.card-type1{
+  width: 327px;
+  height: 552px;
+}
+.card-type2{
+  width: 327px;
+height: 596px;
 }
 
 .image-container {
@@ -134,9 +148,20 @@ body {
   height: 220px;
   border-radius: 8px;
   background-color: #7f8cff;
-  background-image: url(/images/works_section_images/Snapshoot\ Portfolio.png);
 }
-
+.img1{
+  background-image: url(/images/works_section_images/Snapshoot\ Portfolio\ \(1\).png);
+}
+.img2{
+  background-image: url(/images/works_section_images/img2.png);
+}
+.img3{
+  background-image: url(/images/works_section_images/img3.png);
+}
+.img4{
+  background-image: url(/images/works_section_images/img4.png);
+  
+}
 .content-container{
   display: flex;
 flex-direction: column;
@@ -147,6 +172,7 @@ width: 295px;
 height: 288px;
 }
 .project-title{
+font-family: 'Poppins';
 font-style: normal;
 font-weight: 700;
 font-size: 32px;
@@ -157,13 +183,9 @@ h2{
   font-weight: 600;
 font-size: 13px;
 line-height: 16px;
-/* identical to box height, or 123% */
-
-
-/* Neutrals/N600 */
-
 color: #344563;
 }
+
 .frame2{
   display: flex;
 flex-direction: row;
@@ -181,6 +203,7 @@ height: 76px;
 font-weight: 400;
 font-size: 15px;
 line-height: 24px;
+font-family: Poppins;
 color: #344563;
 }
 
@@ -208,7 +231,7 @@ border-radius: 8px;
 
 }
 .word-style{
-  font-family: 'Poppins';
+font-family: 'Poppins';
 font-style: normal;
 font-weight: 500;
 font-size: 12px;
@@ -229,8 +252,10 @@ li:last-child{
 .action{
   width: 295px;
   height: 72px;
+
 }
 .action-button{
+  font-family: 'Poppins';
   padding: 12px;
 gap: 10px;
 width: 124px;
