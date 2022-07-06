@@ -107,3 +107,30 @@ body {
 .fab {
   color: #505f79;
 }
+
+.works-section-container{
+  background: #E5E5E5;
+  width:100%;
+  height:auto;
+  border: 1px solid #DFE1E6;
+border-radius: 16px;
+}
+
+.card-container{
+  width: 327px;
+height: 552px;
+background: #FFFFFF;
+margin:0px 24px;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 16px;
+gap: 12px;
+}
+
+.image-container{
+  width: 295px;
+  height: 220px;
+  border-radius: 8px;
+  background-color: #7f8cff;
+}
