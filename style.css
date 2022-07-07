@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 * {
   box-sizing: border-box;
@@ -180,7 +180,7 @@ body {
 }
 
 .project-title {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -202,7 +202,7 @@ h2 {
   gap: 12px;
   width: 100%;
   height: 32px;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -263,7 +263,7 @@ ul li::before {
 }
 
 .word-style {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -288,13 +288,13 @@ li:last-child {
 }
 
 .action-button {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   padding: 12px;
   gap: 10px;
   width: 124px;
   height: 48px;
   left: 0;
-  top: calc(50% - 48px/2);
+  top: calc(50% - 48px / 2);
   background: #fff;
   border: 1px solid #6070ff;
   border-radius: 8px;
@@ -347,7 +347,7 @@ li:last-child {
 }
 
 .about-heading {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -355,7 +355,7 @@ li:last-child {
 }
 
 .about-intro {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -382,11 +382,58 @@ li:last-child {
 }
 
 .btn-text {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
   text-align: center;
   color: #396df2;
+}
+
+.about-languages {
+  width: 327px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.lang-text {
+  padding-right: 40px;
+}
+.down-arrow {
+  font-size: 20px;
+  padding-right: 60px;
+  margin-top: -10px;
+}
+.languagelist {
+  display: flex;
+  flex-direction: column;
+  width: 327px;
+  height: 248.15px;
+}
+
+.lang-list-item {
+  display: flex;
+  width: 303px;
+  height: 66.72px;
+  background: #f7f7f9;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  list-style: none;
+  color: #253858;
+}
+.last-child {
+  text-align: center;
+  padding-right: 303px;
+}
+.language-img {
+  width: 48px;
+  height: 48px;
+  margin-left: 12px;
+  margin-top: 9px;
+}
+.lang-name {
+  padding-top: 25px;
+  padding-left: 16px;
 }
