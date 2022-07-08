@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap'); 
+
 
 * {
   box-sizing: border-box;
@@ -7,11 +9,18 @@
 }
 
 body {
-  width: 375px;
+  min-width: 375px;
+  max-width: 768px;
+  
   background-color: #e5e5e5;
   font-family: Poppins, Helvetica, sans-serif;
 }
-
+.page-container{
+  border:  5px solid chartreuse;
+  width:100%;
+  height: auto;
+ 
+}
 .headercontainer {
   display: flex;
   width: 100%;
@@ -116,45 +125,55 @@ body {
 .works-section-container {
   background-color: #e5e5e5;
   width: 100%;
-  border: 1px solid #dfe1e6;
+  border: 5px solid #df5819;
   border-radius: 16px;
+  padding: 20px;
   margin-top: 114px;
   display: grid;
-  grid-template-rows: 552px 552px 552px 552px;
+  grid-template-columns: 100%;
+  /* grid-template-rows: 552px 552px 552px 552px; */
   row-gap: 88px;
 }
 
 .card-container {
   background-color: #fff;
-  margin: 0 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 16px;
   gap: 12px;
   border-radius: 16px;
+  border: 1px solid blueviolet
 }
 
-.card-type1 {
+/* .card-type1 {
   width: 327px;
   height: 552px;
-}
+} */
 
-.card-type2 {
+/* .card-type2 {
   width: 327px;
   height: 596px;
-}
+} */
 
-.image-container {
+/* .image-container {
   width: 295px;
   height: 220px;
   border-radius: 8px;
   background-color: #7f8cff;
   padding-bottom: 209px;
+} */
+.img-container {
+  width: 100%;
+  height:auto;
+  border: 1px solid green;
 }
-
-.img1 {
-  background-image: url(/images/works_section_images/Snapshoot\ Portfolio.png);
+/* .card-image{
+  width:100%
+}
+ */.card-image {
+  width:100%;
+  height:auto;
 }
 
 .img2 {
@@ -172,11 +191,12 @@ body {
 .content-container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  /* align-items: flex-start; */
+  border: 1px solid palevioletred;
   padding: 0;
   gap: 12px;
-  width: 295px;
-  height: 288px;
+  width: 100%;
+  height: auto;
 }
 
 .project-title {
@@ -229,8 +249,12 @@ ul li::before {
 }
 
 .description {
-  width: 295px;
-  height: 76px;
+  border:1px solid black;
+  width: 100%;
+  height: auto;
+  
+}
+.description p{
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
@@ -279,7 +303,7 @@ li:last-child {
 }
 
 .action {
-  width: 295px;
+  width: 100%;
   height: 72px;
 }
 
@@ -323,11 +347,11 @@ li:last-child {
   padding: 114px 24px;
   gap: 24px;
   position: absolute;
-  width: 375px;
+  width:100%;
   height: 1125.15px;
   margin-top: 114px;
   background-color: #fff;
-  border-top-right-radius: 80px;
+  border-top-right-radius: 110px;
 }
 
 .about-myself {
