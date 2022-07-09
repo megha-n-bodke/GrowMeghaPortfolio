@@ -15,7 +15,7 @@ body {
 }
 
 .page-container {
- /*  border: 5px solid chartreuse; */
+  /*  border: 5px solid chartreuse; */
   width: 100%;
   height: auto;
 }
@@ -117,6 +117,7 @@ body {
 .works-section-container {
   background-color: #e5e5e5;
   width: 100%;
+
   /* border: 5px solid #df5819; */
   border-radius: 16px;
   padding: 20px;
@@ -134,14 +135,17 @@ body {
   padding: 16px;
   gap: 12px;
   border-radius: 16px;
- /*  border: 1px solid blueviolet; */
+
+  /*  border: 1px solid blueviolet; */
 }
 
 .img-container {
   width: 100%;
   height: auto;
- /*  border: 1px solid green; */
+
+  /*  border: 1px solid green; */
 }
+
 .card-image {
   width: 100%;
   height: auto;
@@ -150,6 +154,7 @@ body {
 .content-container {
   display: flex;
   flex-direction: column;
+
   /* border: 1px solid #dfe1e6; */
   padding: 0;
   gap: 12px;
@@ -384,6 +389,7 @@ li:last-child {
 
 .skills-section {
   display: flex;
+
   /* border: 1px solid palevioletred; */
 }
 
