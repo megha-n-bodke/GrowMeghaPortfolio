@@ -123,8 +123,6 @@ body {
   margin-top: 114px;
   display: grid;
   grid-template-columns: 100%;
-
-  /* grid-template-rows: 552px 552px 552px 552px; */
   row-gap: 88px;
 }
 
@@ -139,32 +137,12 @@ body {
   border: 1px solid blueviolet;
 }
 
-/* .card-type1 {
-  width: 327px;
-  height: 552px;
-} */
-
-/* .card-type2 {
-  width: 327px;
-  height: 596px;
-} */
-
-/* .image-container {
-  width: 295px;
-  height: 220px;
-  border-radius: 8px;
-  background-color: #7f8cff;
-  padding-bottom: 209px;
-} */
 .img-container {
   width: 100%;
   height: auto;
   border: 1px solid green;
 }
-/* .card-image{
-  width:100%
-}
- */.card-image {
+.card-image {
   width: 100%;
   height: auto;
 }
@@ -184,8 +162,6 @@ body {
 .content-container {
   display: flex;
   flex-direction: column;
-
-  /* align-items: flex-start; */
   border: 1px solid #dfe1e6;
   padding: 0;
   gap: 12px;
@@ -270,9 +246,6 @@ ul li::before {
   padding: 4px 12px;
   width: 53px;
   height: 24px;
-
-  /* Primary/B50 */
-
   background-color: #ebebff;
   border-radius: 8px;
 }
@@ -282,13 +255,7 @@ ul li::before {
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
-
-  /* identical to box height, or 133% */
-
   letter-spacing: 0.03em;
-
-  /* Primary/B400 */
-
   color: #6070ff;
 }
 
