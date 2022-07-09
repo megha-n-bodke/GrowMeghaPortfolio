@@ -11,7 +11,6 @@
 body {
   min-width: 375px;
   max-width: 768px;
-  
   background-color: #e5e5e5;
   font-family: Poppins, Helvetica, sans-serif;
 }
@@ -50,19 +49,14 @@ body {
   background-color: #7f8cff;
 }
 
-.main-section {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
+
 
 .content {
   background-image: url(images/header-shapes-mobile.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   height: 590px;
-  width: 390px;
+  width: 100%;
 }
 
 .boldtext {
@@ -343,7 +337,7 @@ li:last-child {
 .about-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   padding: 114px 24px;
   gap: 24px;
   position: absolute;
@@ -417,28 +411,42 @@ li:last-child {
 
 .skills-section {
   display: flex;
+  border:1px solid palevioletred;
 }
 
 .about-languages {
-  width: 327px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-top: 50px;
   margin-bottom: 36px;
   list-style: none;
+  padding: 10px;
 }
 
 .first-option {
   display: flex;
-  justify-content: space-between;
+   justify-content: space-between;
   margin-bottom: 36px;
 }
 
-.lang-text {
-  padding-right: 40px;
+.lang-correction{
+  display: flex;
 }
 
+.lang-correction i{
+  padding-left: 117px;
+  padding-bottom: 36px;
+}
+.lang-text {
+  padding-right:40px;
+}
+
+.btn{
+  border: 2px solid #ACB7C3;
+  color: #396df2;
+}
 .down-arrow {
   font-size: 20px;
   padding-right: 60px;
@@ -487,4 +495,20 @@ li:last-child {
 
 .shapespace {
   margin-left: 181px;
+}
+.last{
+  display:flex;
+
+}
+
+.last i{
+  padding-left: 176px;
+}
+hr-container{
+  width:100%;
+  height:auto;
+}
+
+hr{
+  color:lawngreen;
 }
