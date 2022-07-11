@@ -225,7 +225,7 @@ ul li::before {
   color: #344563;
 }
 
-.languages {
+/* .languages {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -234,7 +234,8 @@ ul li::before {
   width: 203px;
   height: 24px;
   list-style: none;
-}
+} */
+
 
 .languages li {
   padding: 4px 12px;
@@ -251,6 +252,9 @@ ul li::before {
   line-height: 16px;
   letter-spacing: 0.03em;
   color: #6070ff;
+  list-style: none;
+  float: left;
+  margin-right: 10px;
 }
 
 li:last-child {
