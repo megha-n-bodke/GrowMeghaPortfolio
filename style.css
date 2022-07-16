@@ -854,6 +854,9 @@ button .dwn-btn {
   justify-content: center;
 }
 
+.bottom {
+  display: none;
+}
 /* DESKTOP VERSION */
 @media screen and (min-width: 1024px) {
   .header1 {
