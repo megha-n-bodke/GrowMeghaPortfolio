@@ -676,3 +676,259 @@ align-items: center;
     justify-content: center;
   }
 }
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .header2 {
+    display: none;
+  }
+  .headercontainer {
+    position: fixed;
+  }
+}
+@media screen and (min-width: 768px) {
+  .page-container {
+    background-color: #e5e5e5;
+  }
+  .headercontainer {
+    position: fixed;
+  }
+  .header1 {
+    display: none;
+  }
+
+  .logo {
+    margin-left: -106px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    position: relative;
+    animation: mylogo ease-in 5s 3;
+  }
+
+  /* added animation to logo in desktop version */
+  @keyframes mylogo {
+    from{
+      left:0% ;
+    }
+    to{
+      left:70%;
+    }
+    
+  }
+
+  .navlist {
+    gap: 1px;
+  }
+
+  nav ul li a {
+    font-size: 15px;
+    text-decoration: none;
+    color: #344563;
+    margin-right: 25px;
+  }
+
+  .boldtext {
+    padding-top: 210px;
+  }
+  .content {
+    background-image: url(images/Headerbg.svg);
+    background-size: 100% 100%;
+    padding-left: 150px;
+    padding-right: 150px;
+    background-color: #ffffff;
+    border-bottom-left-radius: 120px;
+  }
+  .img-container {
+    flex: 1;
+  }
+
+  .content-container {
+    flex: 1;
+    margin-left: 20px;
+  }
+  .card-container {
+    flex-direction: row;
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+
+  .mobile{
+    display: none;
+  }
+  /* image changed in desktop version */
+  .desktop1 {
+    content: url(/images/SnapshootPortfolio.svg);
+  }
+
+  .desktop2 {
+    content: url(/images/Desktop2.svg);
+  }
+
+  .desktop3 {
+    content: url(/images/Desktop3.png);
+  }
+
+  .desktop4 {
+    content: url(/images/Desktop4.svg);
+  }
+
+   .frame2 .card-role li::before{
+    padding-left: 5px;
+  }
+  .flex-order img {
+    height: 326px;
+  }
+
+  .flex-order {
+    order: 2;
+  }
+  .languagecontaner {
+    margin-left: -10px;
+    margin-top: 18px;
+  }
+  .action {
+    margin-top: 20px;
+  }
+  .contactus-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 200px;
+    padding-right: 200px;
+    margin: auto 0;
+  }
+  .middle-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-container {
+    display: flex;
+    flex-direction: row;
+    border: red 1px solid;
+    padding-left: 5%;
+    height: auto;
+  }
+
+  .about-myself {
+    width: 40%;
+  }
+
+  .about-intro {
+    font-size: 12px;
+    margin-bottom: 12px;
+    line-height: 20px;
+  }
+  .btn-container {
+    width: 100%;
+    height: auto;
+  }
+  .about-languages {
+    display: flex;
+    justify-content: normal;
+    border: chartreuse 2px solid;
+    height: 350px;
+    margin-top: 1px;
+    margin-left: 25px;
+  }
+  .languagelist {
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: auto;
+    margin-top: 20px;
+  }
+  .lang-correction {
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.dwn-btn {
+  width: 12px;
+}
+.lang-list-item {
+  flex-direction: column;
+  width: 100px;
+  height: 100px;
+}
+:horizontal {
+  border: 1px solid red;
+}
+.lang-name {
+  padding-top: 9px;
+  padding-left: 12px;
+  font-size: 15px;
+}
+.last-child {
+  padding-right: 10px;
+  text-align: left;
+}
+
+.form-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* DESKTOP VERSION */
+@media screen and (min-width: 1024px) {
+  .header1 {
+    display: none;
+  }
+  .headercontainer {
+    position: fixed;
+  }
+/*   .logo {
+    margin-left: -106px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+  } */
+  .navlist {
+    gap: 1px;
+  }
+
+  nav ul li a {
+    font-size: 15px;
+    text-decoration: none;
+    color: #344563;
+    margin-right: 25px;
+  }
+
+  .boldtext {
+    padding-top: 210px;
+  }
+
+  .frame2 .mobile{
+    display: none;
+  }
+
+  .lang-correction {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .contactus-container {
+    padding-left: 250px;
+    padding-right: 250px;
+  }
+
+  .languagecontaner {
+    display: none;
+    margin-left: -10px;
+    margin-top: 18px;
+  }
+  .languages {
+    gap: 0px;
+  }
+
+  .languages li:last-child {
+    content: "webdevlopement";
+  }
+
+  .action {
+    margin-top: 20px;
+  }
+}
