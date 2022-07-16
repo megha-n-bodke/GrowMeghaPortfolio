@@ -636,17 +636,16 @@ button .dwn-btn {
   margin-bottom: 32px;
 }
 
-@media screen and (min-width:768px){
+@media screen and (min-width: 768px) {
+  /* Added transition to the form Button */
 
-/* Added transition to the form Button */
-
-#gettouch:hover {
-  background:goldenrod;
-  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
-  color: #fff;
-  border: 2px dashed #fff;
-  transition: background-color 4s box-shadow 3s border 3s color 2s;
-} 
+  #gettouch:hover {
+    background: goldenrod;
+    box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+    color: #fff;
+    border: 2px dashed #fff;
+    transition: background-color 4s box-shadow 3s border 3s color 2s;
+  }
 }
 
 /* Added transition to the form Button on hover for mobile and tablet device screens */
@@ -657,7 +656,6 @@ button .dwn-btn {
     box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
     color: #fff;
     transition: background-color 4s box-shadow 3s border 3s color 2s;
-
   }
 }
 
