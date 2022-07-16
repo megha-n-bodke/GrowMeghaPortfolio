@@ -14,7 +14,9 @@ body {
 
 .page-container {
   min-width: 375px;
+
   /*  max-width: 768px; */
+
   /*  border: 5px solid chartreuse; */
   width: 100%;
   height: auto;
@@ -250,14 +252,15 @@ h2 {
   list-style: none;
 }
 
-.languagesDesktop{
-height:30px;
+.languagesDesktop {
+  height: 30px;
 }
-.languagesDesktop li{
-  background-color: burlywood;
-  background: #EBEBFF;
-border-radius: 8px;
+
+.languagesDesktop li {
+  background-color: #ebebff;
+  border-radius: 8px;
 }
+
 /* .languages2 {
   display: flex;
   flex-direction: row;
@@ -287,9 +290,7 @@ border-radius: 8px;
   list-style: none;
   float: left;
   margin-left: 10px;
-  
 }
-
 
 li:last-child {
   width: 89px;
@@ -456,7 +457,7 @@ li:last-child {
 
 /* .lang-correction i {
   padding-left: 117px;
-  
+
 } */
 
 .lang-text {
@@ -478,6 +479,7 @@ button .dwn-btn {
   border: none;
   background-color: white;
 }
+
 .languagelist {
   display: flex;
   flex-direction: column;
@@ -537,7 +539,8 @@ button .dwn-btn {
   flex-direction: column;
   align-items: center;
   border-top-left-radius: 110px;
-  background: #6070ff
+  background:
+    #6070ff
     url(images/works_section_images/contact-form-shapes-mobile.svg) 100% -20px no-repeat;
   background-size: contain;
   background-repeat: no-repeat;
@@ -663,17 +666,21 @@ button .dwn-btn {
   .header2 {
     display: none;
   }
+
   .headercontainer {
     position: fixed;
   }
 }
+
 @media screen and (min-width: 768px) {
   .page-container {
     background-color: #e5e5e5;
   }
+
   .headercontainer {
     position: fixed;
   }
+
   .header1 {
     display: none;
   }
@@ -689,13 +696,13 @@ button .dwn-btn {
 
   /* added animation to logo in desktop version */
   @keyframes mylogo {
-    from{
-      left:0% ;
+    from {
+      left: 0%;
     }
-    to{
-      left:70%;
+
+    to {
+      left: 70%;
     }
-    
   }
 
   .navlist {
@@ -712,14 +719,16 @@ button .dwn-btn {
   .boldtext {
     padding-top: 210px;
   }
+
   .content {
     background-image: url(images/Headerbg.svg);
     background-size: 100% 100%;
     padding-left: 150px;
     padding-right: 150px;
-    background-color: #ffffff;
+    background-color: #fff;
     border-bottom-left-radius: 120px;
   }
+
   .img-container {
     flex: 1;
   }
@@ -728,15 +737,17 @@ button .dwn-btn {
     flex: 1;
     margin-left: 20px;
   }
+
   .card-container {
     flex-direction: row;
     margin-right: 50px;
     margin-left: 50px;
   }
 
-  .mobile{
+  .mobile {
     display: none;
   }
+
   /* image changed in desktop version */
   .desktop1 {
     content: url(/images/Desktop1.svg);
@@ -754,9 +765,10 @@ button .dwn-btn {
     content: url(/images/Desktop4.svg);
   }
 
-   .frame2 .card-role li::before{
+  .frame2 .card-role li::before {
     padding-left: 5px;
   }
+
   .flex-order img {
     height: 326px;
   }
@@ -764,13 +776,16 @@ button .dwn-btn {
   .flex-order {
     order: 2;
   }
+
   .languagecontaner {
     margin-left: -10px;
     margin-top: 18px;
   }
+
   .action {
     margin-top: 20px;
   }
+
   .contactus-container {
     width: 100%;
     display: flex;
@@ -780,6 +795,7 @@ button .dwn-btn {
     padding-right: 200px;
     margin: auto 0;
   }
+
   .middle-container {
     width: 100%;
     display: flex;
@@ -804,10 +820,12 @@ button .dwn-btn {
     margin-bottom: 12px;
     line-height: 20px;
   }
+
   .btn-container {
     width: 100%;
     height: auto;
   }
+
   .about-languages {
     display: flex;
     justify-content: normal;
@@ -816,56 +834,64 @@ button .dwn-btn {
     margin-top: 1px;
     margin-left: 25px;
   }
+
   .languagelist {
     flex-direction: row;
     justify-content: space-evenly;
     height: auto;
     margin-top: 20px;
   }
+
   .lang-correction {
     align-items: center;
     justify-content: space-between;
   }
-}
-.dwn-btn {
-  width: 12px;
-}
-.lang-list-item {
-  flex-direction: column;
-  width: 100px;
-  height: 100px;
-}
-:horizontal {
-  border: 1px solid red;
-}
-.lang-name {
-  padding-top: 9px;
-  padding-left: 12px;
-  font-size: 15px;
-}
-.last-child {
-  padding-right: 10px;
-  text-align: left;
+
+  button .dwn-btn {
+    width: 12px;
+  }
+
+  .lang-list-item {
+    flex-direction: column;
+    width: 100px;
+    height: 100px;
+  }
+
+  .lang-name {
+    padding-top: 9px;
+    padding-left: 12px;
+    font-size: 15px;
+  }
+
+  .last-child {
+    padding-right: 10px;
+    text-align: left;
+  }
+
+  .form-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .bottom {
+    display: none;
+  }
 }
 
-.form-btn {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
 
-.bottom {
-  display: none;
-}
+
 /* DESKTOP VERSION */
 @media screen and (min-width: 1024px) {
   .header1 {
     display: none;
   }
+
   .headercontainer {
     position: fixed;
   }
-/*   .logo {
+
+  /*   .logo {
     margin-left: -106px;
     font-weight: 700;
     font-size: 18px;
@@ -886,7 +912,7 @@ button .dwn-btn {
     padding-top: 210px;
   }
 
-  .frame2 .mobile{
+  .frame2 .mobile {
     display: none;
   }
 
@@ -905,8 +931,9 @@ button .dwn-btn {
     margin-left: -10px;
     margin-top: 18px;
   }
+
   .languages {
-    gap: 0px;
+    gap: 0;
   }
 
   .languages li:last-child {
