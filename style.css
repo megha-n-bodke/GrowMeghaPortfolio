@@ -678,19 +678,22 @@ li:last-child {
   margin-bottom: -8px;
 }
 
-@media screen and (min-width: 375px) and (max-width: 767px) {
+@media screen and (min-width: 375px) {
   .header2 {
     display: none;
   }
 
-  .headercontainer {
+  /* .headercontainer {
     position: fixed;
-  }
+  } */
 }
 
 @media screen and (min-width: 768px) {
   .page-container {
     background-color: #e5e5e5;
+  }
+  .header2{
+    display: block;
   }
 
   .headercontainer {
@@ -702,7 +705,7 @@ li:last-child {
   }
 
   .logo {
-    margin-left: -106px;
+    /* margin-left: -106px; */
     font-weight: 700;
     font-size: 18px;
     line-height: 20px;
