@@ -23,8 +23,6 @@ form.addEventListener("submit",function(event){
             err.innerHTML = EMAIL_CHECK;
             event.preventDefault();
             err.classList.add("show-alert");
-            
-            
         }
         
     }
