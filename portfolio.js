@@ -1,11 +1,5 @@
-/* let h = document.querySelector("#hmbg");
-console.log(h); */
 
-/* document.addEventListener('click', function(event){
-    h.cl
-}
-); */
-const hmbg = document.querySelector('#hmbg');
+const hmbg = document.querySelector('.fa-bars');
 const clo = document.querySelector('#closebtn');
 const linkitems = document.querySelectorAll('.linkitems');
 
