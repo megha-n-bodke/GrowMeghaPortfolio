@@ -383,6 +383,7 @@
               class="input-data"
               action="https://formspree.io/f/xqknvnzp"
               method="post"
+              id="contact-form"
             >
               <input
                 type="text"
@@ -396,7 +397,7 @@
                 type="email"
                 name="email"
                 id="email"
-                value="natajayanj14@gmail.com"
+                placeholder="natajayanj14@gmail.com"
                 required
               />
               <textarea
@@ -404,6 +405,7 @@
                 placeholder="Write your message here"
                 required
               ></textarea>
+              <span id="err-msg"></span>
               <div class="form-btn">
                 <button type="submit" id="gettouch">Get It Touch</button>
               </div>
@@ -411,11 +413,13 @@
             <div>
               <hr class="bottom" />
             </div>
+
           </div>
         </section>
       </footer>
     </div>
 
     <script src="/portfolio.js"></script>
+    <script src="/email_validation.js"></script>
   </body>
 </html>

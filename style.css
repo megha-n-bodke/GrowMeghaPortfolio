@@ -23,6 +23,14 @@ body {
   background-color: white;
 }
 
+.show-alert{
+  display: block;
+
+}
+#err-msg{
+  display: none;
+}
+
 .headercontainer {
   display: flex;
   width: 100%;
