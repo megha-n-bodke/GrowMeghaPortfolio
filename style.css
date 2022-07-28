@@ -23,10 +23,11 @@ body {
   background-color: white;
 }
 
-.show-alert{
+.show-alert {
   display: block;
-  color : red;
+  color: red;
 }
+
 .hide-alert {
   display: none;
 }
