@@ -383,6 +383,7 @@
               class="input-data"
               action="https://formspree.io/f/xqknvnzp"
               method="post"
+              id = "contact-form"
             >
               <input
                 type="text"
@@ -390,6 +391,7 @@
                 id="username"
                 maxlength="30"
                 value="Yeremias"
+                onchange="changeHandler()"
                 required
               />
               <input
@@ -397,11 +399,14 @@
                 name="email"
                 id="email"
                 placeholder="natajayanj14@gmail.com"
+                onchange="changeHandler()"
                 required
               />
               <textarea
                 id="message"
+                name="message"
                 placeholder="Write your message here"
+                onchange="changeHandler()"
                 required
               ></textarea>
               <span id="err-msg"></span>
