@@ -965,8 +965,8 @@ li:last-child {
 
   nav ul li a {
     font-size: 15px;
-    text-decoration: none;
-    color: #344563;
+    text-decoration:none;
+    color:#344563;
     margin-right: 25px;
   }
 
