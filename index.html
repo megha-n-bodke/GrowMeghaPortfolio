@@ -391,6 +391,7 @@
                 id="username"
                 maxlength="30"
                 value="Yeremias"
+                onchange="changeHandler()"
                 required
               />
               <input
@@ -398,11 +399,14 @@
                 name="email"
                 id="email"
                 placeholder="natajayanj14@gmail.com"
+                onchange="changeHandler()"
                 required
               />
               <textarea
                 id="message"
+                name="message"
                 placeholder="Write your message here"
+                onchange="changeHandler()"
                 required
               ></textarea>
               <span id="err-msg"></span>
@@ -421,5 +425,6 @@
 
     <script src="/portfolio.js"></script>
     <script src="/email_validation.js"></script>
+    <script src = "/local-storage.js"></script>
   </body>
 </html>
