@@ -9,7 +9,6 @@ changeHandler = () => {
     email: userEmail.value,
     msg: userMsg.value,
   };
-  
   localStorage.setItem('userInfo', JSON.stringify(userData));
 };
 
