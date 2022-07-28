@@ -10,14 +10,14 @@ const userData = {
   msg : userMsg.value,
 };
 
-console.log(userData.email);
+/* console.log(userData.email); */
 const obj={
   name : "microverse",
 };
 
 localStorage.setItem("userInfo", JSON.stringify(userData));
 const user = JSON.parse(window.localStorage.getItem("userInfo"));
-console.log(user);
+/* console.log(user); */
 userName.value = user.name;
 userEmail.value = user.email;
 userMsg.value = user.msg; 
