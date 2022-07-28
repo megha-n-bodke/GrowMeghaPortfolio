@@ -23,11 +23,9 @@ body {
   background-color: white;
 }
 
-.show-alert {
+.show-alert{
   display: block;
-  color: red;
 }
-
 .hide-alert {
   display: none;
 }
@@ -689,7 +687,7 @@ li:last-child {
   margin-bottom: -8px;
 }
 
-@media screen and (min-width: 375px) and (max-width: 768px) {
+@media screen and (min-width: 375px)and (max-width: 768px) {
   .header2 {
     display: none;
   }
@@ -697,6 +695,7 @@ li:last-child {
   .header2 .logo {
     display: none;
   }
+
 
   /* .headercontainer {
     position: fixed;
