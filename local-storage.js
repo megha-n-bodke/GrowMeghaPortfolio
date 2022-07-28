@@ -14,16 +14,12 @@ console.log(userData.email);
 const obj={
   name : "microverse",
 };
-/* localStorage.setItem("userInfo", JSON.stringify(obj));
- */localStorage.setItem("userInfo", JSON.stringify(userData));
 
-/* converting userInfo data in object form */
-document.getElementById("contact-form").onload = function() {myFunction()};
-function myFunction(){
+localStorage.setItem("userInfo", JSON.stringify(userData));
 const user = JSON.parse(window.localStorage.getItem("userInfo"));
 console.log(user);
-userName.value = userInfo.name;
-userEmail.value = userInfo.email;
-userMsg.value = userInfo.msg;
-}
-}
+userName.value = user.name;
+userEmail.value = user.email;
+userMsg.value = user.msg; 
+ }
+
