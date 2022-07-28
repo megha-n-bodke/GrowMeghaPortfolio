@@ -698,9 +698,6 @@ li:last-child {
     display: none;
   }
 
-  /* .headercontainer {
-    position: fixed;
-  } */
   .navlist {
     background-color: #396df2;
     color: white;
@@ -951,6 +948,10 @@ li:last-child {
 /* DESKTOP VERSION */
 @media screen and (min-width: 1024px) {
   .header1 {
+    display: none;
+  }
+
+  .header2 .closeicon {
     display: none;
   }
 
