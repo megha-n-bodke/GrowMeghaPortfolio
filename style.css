@@ -665,10 +665,27 @@ li:last-child {
   margin-bottom: 32px;
 }
 
-#gettouch:hover {
-  background-color: #6070ff;
-  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
-  color: #fff;
+@media screen and (min-width: 768px) {
+  /* Added transition to the form Button */
+
+  #gettouch:hover {
+    background: goldenrod;
+    box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+    color: #fff;
+    border: 2px dashed #fff;
+    transition: background-color 4s box-shadow 3s border 3s color 2s;
+  }
+}
+
+/* Added transition to the form Button on hover for mobile and tablet device screens */
+
+@media only screen and (max-width: 600px) {
+  #gettouch:hover {
+    background-color: #6070ff;
+    box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+    color: #fff;
+    transition: background-color 4s box-shadow 3s border 3s color 2s;
+  }
 }
 
 #gettouch:active {
@@ -689,7 +706,7 @@ li:last-child {
   margin-bottom: -8px;
 }
 
-@media screen and (min-width: 375px) and (max-width: 768px) {
+@media screen and (min-width: 375px)and (max-width: 768px) {
   .header2 {
     display: none;
   }
@@ -735,6 +752,7 @@ li:last-child {
 
   .header2 {
     display: block;
+    position: fixed;
   }
 
   .header1 {
@@ -959,12 +977,14 @@ li:last-child {
     position: fixed;
   }
 
-  /*   .logo {
-    margin-left: -106px;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 20px;
-  } */
+  .header2 {
+    display: block;
+  }
+
+  .header2 .fa-times {
+    display: none;
+  }
+
   .navlist {
     gap: 1px;
   }
@@ -995,7 +1015,6 @@ li:last-child {
   }
 
   .languagecontaner {
-    /* display: none; */
     margin-left: -10px;
     margin-top: 18px;
   }

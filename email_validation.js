@@ -4,14 +4,11 @@ const EMAIL_CASE_CHECK = 'Please Enter Email Address In Lower Case';
 const EMAIL_CHECK = 'Please enter valid email address';
 const err = document.getElementById('err-msg');
 
-/* email.insertAdjacentElement('beforebegin', span);
- */
-
 submit.addEventListener('click', (event) => {
   const validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-  const email_add = id.value;
-  if (email_add === email_add.toLowerCase()) {
-    if (validRegex.test(email_add)) {
+  const emailAdd = id.value;
+  if (emailAdd === emailAdd.toLowerCase()) {
+    if (validRegex.test(emailAdd)) {
       err.classList.remove('show-alert');
       err.classList.add('hide-alert');
     } else {
