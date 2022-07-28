@@ -25,6 +25,7 @@ body {
 
 .show-alert{
   display: block;
+  color : red;
 }
 .hide-alert {
   display: none;
@@ -696,10 +697,6 @@ li:last-child {
     display: none;
   }
 
-
-  /* .headercontainer {
-    position: fixed;
-  } */
   .navlist {
     background-color: #396df2;
     color: white;
@@ -737,6 +734,7 @@ li:last-child {
 
   .header2 {
     display: block;
+    position: fixed;
   }
 
   .header1 {
@@ -957,12 +955,14 @@ li:last-child {
     position: fixed;
   }
 
-  /*   .logo {
-    margin-left: -106px;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 20px;
-  } */
+  .header2 {
+    display: block;
+  }
+
+  .header2 .fa-times {
+    display: none;
+  }
+
   .navlist {
     gap: 1px;
   }
@@ -993,7 +993,6 @@ li:last-child {
   }
 
   .languagecontaner {
-    /* display: none; */
     margin-left: -10px;
     margin-top: 18px;
   }
