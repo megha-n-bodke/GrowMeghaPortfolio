@@ -1,4 +1,3 @@
-
 const hmbg = document.querySelector('.fa-bars');
 const clo = document.querySelector('#closebtn');
 const linkitems = document.querySelectorAll('.linkitems');
