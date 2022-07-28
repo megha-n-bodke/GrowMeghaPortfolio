@@ -28,7 +28,7 @@ body {
   color: red;
 }
 
-.hide-alert{
+.hide-alert {
   display: none;
 }
 
@@ -566,7 +566,8 @@ li:last-child {
   flex-direction: column;
   align-items: center;
   border-top-left-radius: 110px;
-  background: #6070ff
+  background:
+    #6070ff
     url(images/works_section_images/contact-form-shapes-mobile.svg) 100% -20px no-repeat;
   background-size: contain;
   background-repeat: no-repeat;
