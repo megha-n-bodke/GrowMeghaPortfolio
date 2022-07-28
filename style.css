@@ -724,7 +724,7 @@ li:last-child {
 
   .header2 {
     display: block;
-    position:fixed;
+    position: fixed;
   }
 
   .header1 {
@@ -945,12 +945,14 @@ li:last-child {
     position: fixed;
   }
 
-  .header2{
-    display:block;
+  .header2 {
+    display: block;
   }
-  .header2 .fa-times{
-    display:none;
+
+  .header2 .fa-times {
+    display: none;
   }
+
   /*   .logo {
     margin-left: -106px;
     font-weight: 700;
