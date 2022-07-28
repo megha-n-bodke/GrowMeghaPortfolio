@@ -18,7 +18,7 @@ clo.addEventListener('click', () => {
 
 [].forEach.call(linkitems, (item) => {
   item.addEventListener('click', () => {
-    navbar.style.display = 'none';
+    /* navbar.style.display = 'none'; */
     hmbg.style.display = 'block';
   });
 });

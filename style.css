@@ -945,6 +945,9 @@ li:last-child {
     position: fixed;
   }
 
+  .header2{
+    display:block;
+  }
   .header2 .fa-times{
     display:none;
   }
