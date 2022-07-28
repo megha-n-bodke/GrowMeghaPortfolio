@@ -953,20 +953,14 @@ li:last-child {
     display: none;
   }
 
-  /*   .logo {
-    margin-left: -106px;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 20px;
-  } */
   .navlist {
     gap: 1px;
   }
 
   nav ul li a {
     font-size: 15px;
-    text-decoration:none;
-    color:#344563;
+    text-decoration: none;
+    color: #344563;
     margin-right: 25px;
   }
 
@@ -989,7 +983,6 @@ li:last-child {
   }
 
   .languagecontaner {
-    /* display: none; */
     margin-left: -10px;
     margin-top: 18px;
   }
