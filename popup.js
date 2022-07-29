@@ -1,9 +1,4 @@
-/* Cards Data */
-
-
-
-
-
+/* action button element linked with var see_project_btn */
 
 const see_project_btn = document.querySelectorAll('.action-button');
 
