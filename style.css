@@ -1017,9 +1017,20 @@ li:last-child {
   margin:10% auto;
   border: 1px solid #EBECF0;
   border-radius: 16px;
+  padding: 20px;
   /* position:absolute; */
 }
 
 .modal-heading{
   background-color: chocolate;
+}
+
+.modal-img{
+  width:60%;
+  height: 40%;
+}
+
+.modal-paragraph{
+  font-size: 12px;
+line-height: 20px;
 }

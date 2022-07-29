@@ -30,6 +30,8 @@ const see_project_btn = document.querySelectorAll('.action-button');
         heading.classList.add('project-title');
         modal.appendChild(heading); 
 
+        const canopy_div = document.createElement('div');
+        modal.appendChild
         const canopy_sec =document.createElement('h2');
         canopy_sec.innerHTML = 'CANOPY';
         canopy_sec.classList.add('frame2')
@@ -47,11 +49,13 @@ const see_project_btn = document.querySelectorAll('.action-button');
         modal.appendChild(canopy_ul_sec);
 
         const img = document.createElement('img');
-        img.src = "./images/Desktop1.svg";
+        img.src = "./images/Snapshoot Portfolio.svg";
+        img.classList.add('modal-img');
         modal.appendChild(img);
 
         const paragraph = document.createElement('p');
         paragraph.innerHTML="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea"
+        paragraph.classList.add('modal-paragraph');
         modal.appendChild(paragraph);
 
         const tech_ul = document.createElement('ul');
