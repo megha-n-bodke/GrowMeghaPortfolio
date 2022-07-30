@@ -531,8 +531,7 @@ li:last-child {
   flex-direction: column;
   align-items: center;
   border-top-left-radius: 110px;
-  background:
-    #6070ff
+  background: #6070ff
     url(images/works_section_images/contact-form-shapes-mobile.svg) 100% -20px no-repeat;
   background-size: contain;
   background-repeat: no-repeat;
@@ -676,7 +675,7 @@ li:last-child {
   margin-bottom: -8px;
 }
 
-@media screen and (min-width: 375px)and (max-width: 768px) {
+@media screen and (min-width: 375px) and (max-width: 768px) {
   body {
     position: absolute;
   }
@@ -726,19 +725,29 @@ li:last-child {
     width: 100%;
     background-color: rgba(136, 136, 141, 0.28);
     display: none;
+    justify-content: center;
+  }
+
+  .modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(136, 136, 141, 0.28);
+    display: none;
+    justify-content: center;
   }
 
   .modal-div {
-    height: 90%;
-    width: 60%;
+    height: 650px;
+    width: 50%;
     display: flex;
     background-color: white;
     margin: 5% auto;
     border: 1px solid #ebecf0;
     border-radius: 16px;
     padding: 20px;
-
-    /* position:absolute; */
   }
 
   .modal-description {
@@ -748,6 +757,49 @@ li:last-child {
 
   .modal-buttons {
     gap: 10px;
+  }
+
+  .modal-action-buttons {
+    width: 114px;
+    height: 38px;
+    left: 0;
+    top: calc(50% - 48px / 2);
+    background-color: #fff;
+    border: 1px solid #6070ff;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #396df2;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  .modal-action-buttons {
+    width: 100px;
+  }
+
+  .languagecontaner ul {
+    margin-top: 10px;
+  }
+
+  .modal-paragraph {
+    margin-left: 10px;
+  }
+
+  .modal-img {
+    width: 97%;
+  }
+
+
+  .modal-topbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .project-title{
+    font-size: 20px;
   }
 }
 
@@ -1039,74 +1091,71 @@ li:last-child {
   /* modal container */
   .modal-container {
     position: fixed;
-    top: 0;
-    left: 0;
+
     height: 100vh;
     width: 100%;
+    top: 0;
+    left: 0;
     background-color: rgba(136, 136, 141, 0.28);
     display: none;
+    justify-content: center;
+    overflow: auto;
+  }
+
+  .modal-div {
+    background-color: white;
+    width: 77%;
+    margin: 7% auto;
+    
+  }
+
+  .modal-img {
+    width: 97%;
   }
 
   .modal-topbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin: 10px;
   }
 
   .close-btn {
-    margin-left: 60%;
     color: #67798e;
-    margin-top: 5px;
+    margin-right: 50px;
   }
 
-  .modal-img {
-    width: 100%;
-    height: 80%;
+  .languages {
+    margin-left: 20px;
   }
-
-  .modal-description {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .modal-paragraph {
-    font-size: 12px;
-    line-height: 15px;
-  }
-
-  .modal-buttons {
-    display: flex;
-    margin: 20px;
-  }
-
   .modal-action-buttons {
-    padding: 12px;
-
-    /* gap: 10px; */
-    width: 114px;
+    width: 100px;
     height: 38px;
     left: 0;
     top: calc(50% - 48px / 2);
     background-color: #fff;
     border: 1px solid #6070ff;
     border-radius: 8px;
-
-    /* font-weight: 500; */
+    font-weight: 500;
     font-size: 14px;
-
-    /* line-height: 24px; */
+    line-height: 24px;
     color: #396df2;
+    margin-top: 10px;
+    margin-left: 10px;
   }
+
+  .modal-buttons {
+    gap: 10px;
+  }
+
+  .languagecontaner ul {
+    margin-right: 20px;
+    margin-bottom: 5px;
+  }
+
+  .modal-description{
+    margin: 20px 20px 10px 20px;
+  }
+
 }
 
-/* modal block */
-
-/* .modal-div {
-  height: 90%;
-  width: 80%;
-  display: flex;
-  background-color: white;
-  margin: 5% auto;
-  border: 1px solid #ebecf0;
-  border-radius: 16px;
-  padding: 20px;
-} */
