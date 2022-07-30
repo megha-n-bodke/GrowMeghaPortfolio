@@ -1090,6 +1090,7 @@ li:last-child {
     background-color: white;
     width: 77%;
     margin: 7% auto;
+    border-radius: 16px;
   }
 
   .modal-img {

@@ -8,8 +8,10 @@ const projects = [
     year: 2015,
     image: './images/Snapshoot Portfolio.svg',
     technologies: ['html', 'Ruby', 'css'],
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been Lorem Ipsum has been Lorem Ipsum has been Lorem Ipsum has been  lorem the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s",
-    liveVersion: "url('https://github.com/megha-n-bodke/meghaportfolio.github.io')",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been Lorem Ipsum has been Lorem Ipsum has been Lorem Ipsum has been  lorem the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s",
+    liveVersion:
+      "url('https://github.com/megha-n-bodke/meghaportfolio.github.io')",
     source: "url('https://github.com/megha-n-bodke')",
   },
   {
@@ -20,8 +22,10 @@ const projects = [
     year: 2020,
     image: './images/Desktop2.svg',
     technologies: ['html', 'Ruby', 'css'],
-    description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-    liveVersion: "url('https://github.com/megha-n-bodke/meghaportfolio.github.io')",
+    description:
+      'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+    liveVersion:
+      "url('https://github.com/megha-n-bodke/meghaportfolio.github.io')",
     source: "url('https://github.com/megha-n-bodke')",
   },
   {
@@ -32,8 +36,10 @@ const projects = [
     year: 2019,
     image: './images/Desktop3.svg',
     technologies: ['html', 'Ruby', 'css'],
-    description: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
-    liveVersion: "url('https://github.com/megha-n-bodke/meghaportfolio.github.io')",
+    description:
+      "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
+    liveVersion:
+      "url('https://github.com/megha-n-bodke/meghaportfolio.github.io')",
     source: "url('https://github.com/megha-n-bodke')",
   },
   {
@@ -44,69 +50,72 @@ const projects = [
     year: 2020,
     image: './images/Desktop4.svg',
     technologies: ['html', 'Ruby', 'css'],
-    description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-    liveVersion: "url('https://github.com/megha-n-bodke/meghaportfolio.github.io')",
+    description:
+      'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+    liveVersion:
+      "url('https://github.com/megha-n-bodke/meghaportfolio.github.io')",
     source: "url('https://github.com/megha-n-bodke')",
   },
 ];
 
-function projectview(project) {
-  let technologies = '';
-  project.technologies.forEach((element) => {
-    technologies += `<li class="word-style">${element}</li>`;
+document.addEventListener('DOMContentLoaded', () => {
+  let cardHtml = '';
+  projects.map((project) => {
+    const technologies = project.technologies.map(
+      (element) => `<li class="word-style">${element}</li>`,
+    );
+    cardHtml += `
+    <section class="works-section-container" id="portfolio">
+    <div class="card-container">
+      <div class="img-container">
+        <img
+          class="card-image desktop1"
+          src="${project.image}"
+          alt=""
+        />
+      </div>
+      <div class="content-container">
+        <h2 class="project-title">${project.name}</h2>
+        <div class="frame2">
+          <h2>${project.client}</h2>
+          <ul class="card-role">
+            <li>${project.role}</li>
+            <li>${project.year}</li>
+          </ul>
+        </div>
+    
+        <div class="description">
+          <p>${project.description}
+          </p>
+        </div>
+    
+        <div class="languagecontaner">
+          <ul class="languages">
+          ${technologies}
+          </ul>
+        </div>
+        <div class="action">
+          <button type="button" id=${project.id} class="action-button" onClick=projectDetailsView(${project.id})>
+          See Project
+          </button>
+        </div>
+      </div>
+    </div>
+    `;
+    return cardHtml;
   });
 
-  const cardHtml = `
-<section class="works-section-container" id="portfolio">
-<div class="card-container">
-  <div class="img-container">
-    <img
-      class="card-image desktop1"
-      src="${project.image}"
-      alt=""
-    />
-  </div>
-  <div class="content-container">
-    <h2 class="project-title">${project.name}</h2>
-    <div class="frame2">
-      <h2>${project.client}</h2>
-      <ul class="card-role">
-        <li>${project.role}</li>
-        <li>${project.year}</li>
-      </ul>
-    </div>
+  const portfolio = document.getElementById('portfolio');
 
-    <div class="description">
-      <p>${project.description}
-      </p>
-    </div>
-
-    <div class="languagecontaner">
-      <ul class="languages">
-      ${technologies}
-      </ul>
-    </div>
-    <div class="action">
-      <button type="button" id=${project.id} class="action-button" onClick=projectDetailsView(${project.id})>
-      See Project
-      </button>
-    </div>
-  </div>
-</div>
-`;
-
-  return cardHtml;
-}
-
-// eslint-disable-next-line no-unused-vars
-function projectDetailsView(projectId) {
-  const projectDetailsModal = document.getElementById('projectDetailsModal');
-  const project = projects[projectId - 1];
-  let technologies = '';
-  project.technologies.forEach((element) => {
-    technologies += `<li class="word-style">${element}</li>`;
-  });
-  const projectDetailsHtml = `
+  // eslint-disable-next-line no-unused-vars
+  projectDetailsView = (projectId) => {
+    const projectDetailsModal = document.getElementById('projectDetailsModal');
+    const project = projects[projectId - 1];
+    let technologies = '';
+    project.technologies.forEach((element) => {
+      technologies += `<li class="word-style">${element}</li>`;
+    });
+    const projectDetailsHtml = `
     <div class="modal-div">
    
     <div class="content-container">
@@ -151,22 +160,17 @@ function projectDetailsView(projectId) {
   </div>
   </div>
     `;
-  projectDetailsModal.innerHTML = projectDetailsHtml;
-  projectDetailsModal.style.display = 'block';
-}
+    projectDetailsModal.innerHTML = projectDetailsHtml;
+    projectDetailsModal.style.display = 'block';
+  };
 
-// eslint-disable-next-line no-unused-vars
-function closeModal() {
-  const projectDetailsModal = document.getElementById('projectDetailsModal');
-  projectDetailsModal.style.display = 'none';
-}
+  // eslint-disable-next-line no-unused-vars
+  closeModal = () => {
+    const projectDetailsModal = document.getElementById('projectDetailsModal');
+    projectDetailsModal.style.display = 'none';
+  };
 
-document.addEventListener('DOMContentLoaded', () => {
-  const portfolio = document.getElementById('portfolio');
-
-  projects.forEach((project) => {
-    portfolio.innerHTML += projectview(project, 0);
-  });
+  portfolio.innerHTML = cardHtml;
 
   const projectDetailsModal = document.getElementById('projectDetailsModal');
   document.onclick = (e) => {
