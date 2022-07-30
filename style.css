@@ -735,7 +735,14 @@ li:last-child {
     padding: 20px;
     /* position:absolute; */
   }
-}
+
+  .modal-description{
+    display:flex;
+    flex-direction: column;
+  }
+
+  
+
 
 @media screen and (min-width: 768px) {
   .page-container {
@@ -1053,7 +1060,7 @@ li:last-child {
 }
 
 .close-btn{
-  margin-left: 700px;
+  margin-left:60%;
   color:#67798E;
   margin-top: 5px;
 }
@@ -1064,6 +1071,7 @@ li:last-child {
 
 .modal-description{
   display:flex;
+  margin-top: -20px;
 }
 
 .modal-paragraph{

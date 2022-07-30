@@ -112,8 +112,8 @@ function projectDetailsView(projectId) {
     <div class="content-container">
     <div class="modal-topbar">
       <h2 class="project-title">${project.name}</h2>
-      <i class="fa fa-times close-btn" id="close-modal"></i>
-    </div>
+      <i class="fa fa-times close-btn" id="close-modal" onClick="closeModal()"></i>
+      </div>
       <div class="frame2">
         <h2>CANOPY</h2>
         <ul class="card-role">
@@ -153,15 +153,12 @@ function projectDetailsView(projectId) {
     `
     projectDetailsModal.innerHTML = projectDetailsHtml;
     projectDetailsModal.style.display = "block";
-
-    const closeModal = document.getElementsByClassName("fa-times");
-    closeModal.addEventListener("click", () => {
-        alert("inside click");
-        projectDetailsModal.style.display = "none";
-    });
-  
- 
 };
+
+function closeModal() {
+    const projectDetailsModal = document.getElementById("projectDetailsModal");
+    projectDetailsModal.style.display = "none";
+    }
 
 document.addEventListener("DOMContentLoaded", () => {
     const portfolio = document.getElementById("portfolio");
@@ -172,5 +169,12 @@ document.addEventListener("DOMContentLoaded", () => {
         // portfolio.innerHTML += `<h3>Hello world ${project.id}</h3>`;
         portfolio.innerHTML += projectview(project, 0);
     }
+
+    const projectDetailsModal = document.getElementById("projectDetailsModal");
+        document.onclick = (e) => {
+        if (e.target === projectDetailsModal) {
+        projectDetailsModal.style.display = "none";
+        }
+    };
  
 });
