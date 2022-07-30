@@ -1,62 +1,62 @@
 /* Dyanamic card display */
 const popupWindow = document.querySelector('.modal-container');
 const projects = [
-    {
-        id: 1,
-        name: 'Tonic',
-        client: 'CANOPY',
-        role: 'Back End Dev',
-        year: 2015,
-        image: './images/Snapshoot Portfolio.svg',
-        technologies: ['html', 'Ruby on rails', 'css', 'javaScript'],
-        description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-        liveVersion: "url('https://github.com/megha-n-bodke/meghaportfolio.github.io')",
-        source: "url('https://github.com/megha-n-bodke')",
-    },
-    {
-        id: 2,
-        name: 'Multi-Post Stories',
-        client: 'CANOPY',
-        role: 'Back End Dev',
-        year: 2020,
-        image: './images/Desktop2.svg',
-        technologies: ['html', 'Ruby on rails', 'css', 'javaScript'],
-        description:"Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.",
-        liveVersion: "url('https://github.com/megha-n-bodke/meghaportfolio.github.io')",
-        source: "url('https://github.com/megha-n-bodke')",
-    },
-    {
-        id: 3,
-        name: 'Tonic',
-        client: 'CANOPY',
-        role: 'Back End Dev',
-        year: 2019,
-        image: './images/Desktop3.svg',
-        technologies: ['html', 'Ruby on rails', 'css', 'javaScript'],
-        description:"Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
-        liveVersion: "url('https://github.com/megha-n-bodke/meghaportfolio.github.io')",
-        source: "url('https://github.com/megha-n-bodke')",
-    },
-    {
-        id: 4,
-        name: 'Multi post Stories',
-        client: 'CANOPY',
-        role: 'Back End Dev',
-        year: 2020,
-        image: './images/Desktop4.svg',
-        technologies: ['html', 'Ruby on rails', 'css', 'javaScript'],
-        description:"A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.",
-        liveVersion: "url('https://github.com/megha-n-bodke/meghaportfolio.github.io')",
-        source: "url('https://github.com/megha-n-bodke')",
-    },
+  {
+    id: 1,
+    name: 'Tonic',
+    client: 'CANOPY',
+    role: 'Back End Dev',
+    year: 2015,
+    image: './images/Snapshoot Portfolio.svg',
+    technologies: ['html', 'Ruby on rails', 'css', 'javaScript'],
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    liveVersion: "url('https://github.com/megha-n-bodke/meghaportfolio.github.io')",
+    source: "url('https://github.com/megha-n-bodke')",
+  },
+  {
+    id: 2,
+    name: 'Multi-Post Stories',
+    client: 'CANOPY',
+    role: 'Back End Dev',
+    year: 2020,
+    image: './images/Desktop2.svg',
+    technologies: ['html', 'Ruby on rails', 'css', 'javaScript'],
+    description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+    liveVersion: "url('https://github.com/megha-n-bodke/meghaportfolio.github.io')",
+    source: "url('https://github.com/megha-n-bodke')",
+  },
+  {
+    id: 3,
+    name: 'Tonic',
+    client: 'CANOPY',
+    role: 'Back End Dev',
+    year: 2019,
+    image: './images/Desktop3.svg',
+    technologies: ['html', 'Ruby on rails', 'css', 'javaScript'],
+    description: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
+    liveVersion: "url('https://github.com/megha-n-bodke/meghaportfolio.github.io')",
+    source: "url('https://github.com/megha-n-bodke')",
+  },
+  {
+    id: 4,
+    name: 'Multi post Stories',
+    client: 'CANOPY',
+    role: 'Back End Dev',
+    year: 2020,
+    image: './images/Desktop4.svg',
+    technologies: ['html', 'Ruby on rails', 'css', 'javaScript'],
+    description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+    liveVersion: "url('https://github.com/megha-n-bodke/meghaportfolio.github.io')",
+    source: "url('https://github.com/megha-n-bodke')",
+  },
 ];
 
 function projectview(project) {
-    var technologies = '';
-    for (const tech of project.technologies) {
-        technologies += `<li class="word-style">${tech}</li>`;
-    }
-    cardHtml = `
+  let technologies = '';
+  for (const tech of project.technologies) {
+    technologies += `<li class="word-style">${tech}</li>`;
+  }
+  cardHtml = `
 <section class="works-section-container" id="portfolio">
 <div class="card-container">
   <div class="img-container">
@@ -95,18 +95,17 @@ function projectview(project) {
 </div>
 `;
 
-    return cardHtml;
-};
+  return cardHtml;
+}
 
 function projectDetailsView(projectId) {
-    const projectDetailsModal = document.getElementById("projectDetailsModal");
-    const closebtn = document.getElementById("close-modal");
-    const project = projects[projectId - 1];
-    var technologies = '';
-    for (const tech of project.technologies) {
-        technologies += `<li class="word-style">${tech}</li>`;
-    }
-    const projectDetailsHtml = `
+  const projectDetailsModal = document.getElementById('projectDetailsModal');
+  const project = projects[projectId - 1];
+  let technologies = '';
+  for (const tech of project.technologies) {
+    technologies += `<li class="word-style">${tech}</li>`;
+  }
+  const projectDetailsHtml = `
     <div class="modal-div">
    
     <div class="content-container">
@@ -150,31 +149,29 @@ function projectDetailsView(projectId) {
     </div>
   </div>
   </div>
-    `
-    projectDetailsModal.innerHTML = projectDetailsHtml;
-    projectDetailsModal.style.display = "block";
-};
+    `;
+  projectDetailsModal.innerHTML = projectDetailsHtml;
+  projectDetailsModal.style.display = 'block';
+}
 
 function closeModal() {
-    const projectDetailsModal = document.getElementById("projectDetailsModal");
-    projectDetailsModal.style.display = "none";
-    }
+  const projectDetailsModal = document.getElementById('projectDetailsModal');
+  projectDetailsModal.style.display = 'none';
+}
 
-document.addEventListener("DOMContentLoaded", () => {
-    const portfolio = document.getElementById("portfolio");
-   
-    // portfolio.innerHTML = "<h3>Hello world</h3>";
-    for (const project of projects) {
-        console.log(project);
-        // portfolio.innerHTML += `<h3>Hello world ${project.id}</h3>`;
-        portfolio.innerHTML += projectview(project, 0);
-    }
+document.addEventListener('DOMContentLoaded', () => {
+  const portfolio = document.getElementById('portfolio');
 
-    const projectDetailsModal = document.getElementById("projectDetailsModal");
-        document.onclick = (e) => {
-        if (e.target === projectDetailsModal) {
-        projectDetailsModal.style.display = "none";
-        }
-    };
- 
+  // portfolio.innerHTML = "<h3>Hello world</h3>";
+  for (const project of projects) {
+    // portfolio.innerHTML += `<h3>Hello world ${project.id}</h3>`;
+    portfolio.innerHTML += projectview(project, 0);
+  }
+
+  const projectDetailsModal = document.getElementById('projectDetailsModal');
+  document.onclick = (e) => {
+    if (e.target === projectDetailsModal) {
+      projectDetailsModal.style.display = 'none';
+    }
+  };
 });
