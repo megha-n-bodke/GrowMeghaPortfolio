@@ -3,7 +3,8 @@ const userName = document.getElementById('username');
 const userEmail = document.getElementById('email');
 const userMsg = document.getElementById('message');
 
-changeHandler = () => {
+// eslint-disable-next-line no-unused-vars
+const changeHandler = () => {
   const userData = {
     name: userName.value,
     email: userEmail.value,
