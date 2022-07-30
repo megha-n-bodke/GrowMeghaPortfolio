@@ -8,7 +8,7 @@ const projects = [
     year: 2015,
     image: './images/Snapshoot Portfolio.svg',
     technologies: ['html', 'Ruby', 'css', 'javaScript'],
-    description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been Lorem Ipsum has been Lorem Ipsum has been Lorem Ipsum has been  lorem the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s",
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been Lorem Ipsum has been Lorem Ipsum has been Lorem Ipsum has been  lorem the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s",
     liveVersion: "url('https://github.com/megha-n-bodke/meghaportfolio.github.io')",
     source: "url('https://github.com/megha-n-bodke')",
   },
