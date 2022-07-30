@@ -1,5 +1,4 @@
 /* Dyanamic card display */
-const popupWindow = document.querySelector('.modal-container');
 const projects = [
   {
     id: 1,
@@ -53,10 +52,11 @@ const projects = [
 
 function projectview(project) {
   let technologies = '';
-  for (const tech of project.technologies) {
-    technologies += `<li class="word-style">${tech}</li>`;
-  }
-  cardHtml = `
+  project.technologies.forEach((element) => {
+    technologies += `<li class="word-style">${element}</li>`;
+  });
+
+  const cardHtml = `
 <section class="works-section-container" id="portfolio">
 <div class="card-container">
   <div class="img-container">
@@ -98,13 +98,14 @@ function projectview(project) {
   return cardHtml;
 }
 
+// eslint-disable-next-line no-unused-vars
 function projectDetailsView(projectId) {
   const projectDetailsModal = document.getElementById('projectDetailsModal');
   const project = projects[projectId - 1];
   let technologies = '';
-  for (const tech of project.technologies) {
-    technologies += `<li class="word-style">${tech}</li>`;
-  }
+  project.technologies.forEach((element) => {
+    technologies += `<li class="word-style">${element}</li>`;
+  });
   const projectDetailsHtml = `
     <div class="modal-div">
    
@@ -154,6 +155,7 @@ function projectDetailsView(projectId) {
   projectDetailsModal.style.display = 'block';
 }
 
+// eslint-disable-next-line no-unused-vars
 function closeModal() {
   const projectDetailsModal = document.getElementById('projectDetailsModal');
   projectDetailsModal.style.display = 'none';
@@ -162,11 +164,9 @@ function closeModal() {
 document.addEventListener('DOMContentLoaded', () => {
   const portfolio = document.getElementById('portfolio');
 
-  // portfolio.innerHTML = "<h3>Hello world</h3>";
-  for (const project of projects) {
-    // portfolio.innerHTML += `<h3>Hello world ${project.id}</h3>`;
+  projects.forEach((project) => {
     portfolio.innerHTML += projectview(project, 0);
-  }
+  });
 
   const projectDetailsModal = document.getElementById('projectDetailsModal');
   document.onclick = (e) => {
