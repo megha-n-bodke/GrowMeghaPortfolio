@@ -531,7 +531,8 @@ li:last-child {
   flex-direction: column;
   align-items: center;
   border-top-left-radius: 110px;
-  background: #6070ff
+  background:
+    #6070ff
     url(images/works_section_images/contact-form-shapes-mobile.svg) 100% -20px no-repeat;
   background-size: contain;
   background-repeat: no-repeat;
@@ -728,17 +729,6 @@ li:last-child {
     justify-content: center;
   }
 
-  .modal-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100%;
-    background-color: rgba(136, 136, 141, 0.28);
-    display: none;
-    justify-content: center;
-  }
-
   .modal-div {
     height: 650px;
     width: 50%;
@@ -760,7 +750,7 @@ li:last-child {
   }
 
   .modal-action-buttons {
-    width: 114px;
+    width: 100px;
     height: 38px;
     left: 0;
     top: calc(50% - 48px / 2);
@@ -775,10 +765,6 @@ li:last-child {
     margin-left: 10px;
   }
 
-  .modal-action-buttons {
-    width: 100px;
-  }
-
   .languagecontaner ul {
     margin-top: 10px;
   }
@@ -791,14 +777,13 @@ li:last-child {
     width: 97%;
   }
 
-
-  .modal-topbar{
+  .modal-topbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
-  .project-title{
+  .project-title {
     font-size: 20px;
   }
 }
@@ -1091,7 +1076,6 @@ li:last-child {
   /* modal container */
   .modal-container {
     position: fixed;
-
     height: 100vh;
     width: 100%;
     top: 0;
@@ -1106,7 +1090,6 @@ li:last-child {
     background-color: white;
     width: 77%;
     margin: 7% auto;
-    
   }
 
   .modal-img {
@@ -1125,9 +1108,6 @@ li:last-child {
     margin-right: 50px;
   }
 
-  .languages {
-    margin-left: 20px;
-  }
   .modal-action-buttons {
     width: 100px;
     height: 38px;
@@ -1151,11 +1131,10 @@ li:last-child {
   .languagecontaner ul {
     margin-right: 20px;
     margin-bottom: 5px;
+    margin-left: 20px;
   }
 
-  .modal-description{
+  .modal-description {
     margin: 20px 20px 10px 20px;
   }
-
 }
-
