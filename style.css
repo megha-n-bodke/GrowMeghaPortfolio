@@ -137,10 +137,10 @@ body {
   width: 100%;
   border-radius: 16px;
   padding: 20px;
-  margin-top: 114px;
+  margin-top: 50px;
   display: grid;
   grid-template-columns: 100%;
-  row-gap: 88px;
+  row-gap: 60px;
 }
 
 .card-container {
@@ -777,7 +777,7 @@ li:last-child {
 
   .content-container {
     flex: 1;
-    margin-left: 20px;
+    margin-left: 10px;
   }
 
   .card-container {
@@ -791,7 +791,7 @@ li:last-child {
   }
 
   /* image changed in desktop version */
-  .desktop1 {
+  /* .desktop1 {
     content: url(/images/Desktop1.svg);
   }
 
@@ -805,7 +805,7 @@ li:last-child {
 
   .desktop4 {
     content: url(/images/Desktop4.svg);
-  }
+  } */
 
   .frame2 .card-role li::before {
     padding-left: 5px;
@@ -1012,26 +1012,60 @@ li:last-child {
 
 /* modal block */
 .modal-div{
-  height: 80%;
+  height: 90%;
   width: 80%;
+  display: flex;
   background-color:white;
-  margin:10% auto;
+  margin:5% auto;
   border: 1px solid #EBECF0;
   border-radius: 16px;
   padding: 20px;
   /* position:absolute; */
 }
 
-.modal-heading{
-  background-color: chocolate;
+.modal-topbar{
+  display: flex;
+  margin-bottom: -15px;
 }
 
+.close-btn{
+  margin-left: 700px;
+  color:#67798E;
+  margin-top: 5px;
+}
 .modal-img{
-  width:60%;
-  height: 40%;
+  width:100%;
+  height: 80%;;
+}
+
+.modal-description{
+  display:flex;
 }
 
 .modal-paragraph{
   font-size: 12px;
-line-height: 20px;
+line-height: 15px;
 }
+
+.modal-buttons{
+  display: flex;
+  margin:20px;
+}
+
+.modal-action-buttons{
+  padding: 12px;
+  /* gap: 10px; */
+  width: 114px;
+  height: 38px;
+  left: 0;
+  top: calc(50% - 48px / 2);
+  background-color: #fff;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  /* font-weight: 500; */
+  font-size: 14px;
+  /* line-height: 24px; */
+  color: #396df2;
+}
+
+
