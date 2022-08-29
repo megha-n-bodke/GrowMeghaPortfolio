@@ -2,40 +2,38 @@
 const projects = [
   {
     id: 1,
-    name: 'Tonic',
-    client: 'CANOPY',
-    role: 'Back End Dev',
-    year: 2015,
-    image: './images/Snapshoot Portfolio.svg',
-    technologies: ['html', 'Ruby', 'css'],
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been Lorem Ipsum has been Lorem Ipsum has been Lorem Ipsum has been  lorem the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s",
-    liveVersion:
-      "url('https://github.com/megha-n-bodke/meghaportfolio.github.io')",
-    source: "url('https://github.com/megha-n-bodke')",
+    name: "Women Health Summit(Capstone)",
+    client: "CANOPY",
+    role: "Fullstack Dev",
+    year: 2022,
+    image: "./images/HomePage.png",
+    technologies: ["Html", "JS", "CSS"],
+    description: "Web application Made for Women Health Summit 2022",
+    liveVersion: "https://megha-n-bodke.github.io/womenhealth.github.io/",
+    source: "https://github.com/megha-n-bodke/MeghaCapstone",
   },
   {
     id: 2,
-    name: 'Multi-Post Stories',
-    client: 'CANOPY',
-    role: 'Back End Dev',
+    name: "Multi-Post Stories",
+    client: "CANOPY",
+    role: "Back End Dev",
     year: 2020,
-    image: './images/Desktop2.svg',
-    technologies: ['html', 'Ruby', 'css'],
+    image: "./images/Desktop2.svg",
+    technologies: ["html", "Ruby", "css"],
     description:
-      'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+      "Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.",
     liveVersion:
       "url('https://github.com/megha-n-bodke/meghaportfolio.github.io')",
     source: "url('https://github.com/megha-n-bodke')",
   },
   {
     id: 3,
-    name: 'Tonic',
-    client: 'CANOPY',
-    role: 'Back End Dev',
+    name: "Tonic",
+    client: "CANOPY",
+    role: "Back End Dev",
     year: 2019,
-    image: './images/Desktop3.svg',
-    technologies: ['html', 'Ruby', 'css'],
+    image: "./images/Desktop3.svg",
+    technologies: ["html", "Ruby", "css"],
     description:
       "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
     liveVersion:
@@ -44,25 +42,25 @@ const projects = [
   },
   {
     id: 4,
-    name: 'Multi post Stories',
-    client: 'CANOPY',
-    role: 'Back End Dev',
+    name: "Multi post Stories",
+    client: "CANOPY",
+    role: "Back End Dev",
     year: 2020,
-    image: './images/Desktop4.svg',
-    technologies: ['html', 'Ruby', 'css'],
+    image: "./images/Desktop4.svg",
+    technologies: ["html", "Ruby", "css"],
     description:
-      'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+      "A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.",
     liveVersion:
       "url('https://github.com/megha-n-bodke/meghaportfolio.github.io')",
     source: "url('https://github.com/megha-n-bodke')",
   },
 ];
 
-document.addEventListener('DOMContentLoaded', () => {
-  let cardHtml = '';
+document.addEventListener("DOMContentLoaded", () => {
+  let cardHtml = "";
   projects.map((project) => {
     const technologies = project.technologies.map(
-      (element) => `<li class="word-style">${element}</li>`,
+      (element) => `<li class="word-style">${element}</li>`
     );
     cardHtml += `
     <section class="works-section-container" id="portfolio">
@@ -105,13 +103,13 @@ document.addEventListener('DOMContentLoaded', () => {
     return cardHtml;
   });
 
-  const portfolio = document.getElementById('portfolio');
+  const portfolio = document.getElementById("portfolio");
 
   // eslint-disable-next-line no-unused-vars
   projectDetailsView = (projectId) => {
-    const projectDetailsModal = document.getElementById('projectDetailsModal');
+    const projectDetailsModal = document.getElementById("projectDetailsModal");
     const project = projects[projectId - 1];
-    let technologies = '';
+    let technologies = "";
     project.technologies.forEach((element) => {
       technologies += `<li class="word-style">${element}</li>`;
     });
@@ -149,33 +147,36 @@ document.addEventListener('DOMContentLoaded', () => {
         </ul>
       </div>
       <div class="modal-buttons">
-      <button type="button" class="modal-action-buttons">
+      <a href=${project.liveVersion} class="modal-action-buttons" target="_blank">
       See live
-      </button>
-      <button type="button" class="modal-action-buttons">
-      See Source
-      </button>
+      </a>
+      <a href=${project.source} class="modal-action-buttons" target="_blank">See Source</a>
+      
+     
     </div>
     </div>
   </div>
   </div>
     `;
     projectDetailsModal.innerHTML = projectDetailsHtml;
-    projectDetailsModal.style.display = 'block';
+    projectDetailsModal.style.display = "block";
   };
 
+  const display = () => {
+    alert("btn clicked");
+  };
   // eslint-disable-next-line no-unused-vars
   closeModal = () => {
-    const projectDetailsModal = document.getElementById('projectDetailsModal');
-    projectDetailsModal.style.display = 'none';
+    const projectDetailsModal = document.getElementById("projectDetailsModal");
+    projectDetailsModal.style.display = "none";
   };
 
   portfolio.innerHTML = cardHtml;
 
-  const projectDetailsModal = document.getElementById('projectDetailsModal');
+  const projectDetailsModal = document.getElementById("projectDetailsModal");
   document.onclick = (e) => {
     if (e.target === projectDetailsModal) {
-      projectDetailsModal.style.display = 'none';
+      projectDetailsModal.style.display = "none";
     }
   };
 });
